@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Nails & Spa</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #dfd3c3;      /* Nâu nhạt nền */
+            --primary-color: #433520; /* Nâu đậm chữ & nút */
+            --accent-color: #855e42;  /* Nâu trung gian */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            overflow-x: hidden;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 10%;
+            gap: 80px; /* Tăng khoảng cách giữa ảnh và chữ */
+            box-sizing: border-box;
+        }
+
+        /* HÌNH ẢNH */
+        .hero-img {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-img img {
+            width: 100%;
+            max-width: 550px; /* Tăng kích thước ảnh cho nổi bật */
+            height: auto;
+            border-radius: 40px; /* Bo góc mềm mại hơn */
+            box-shadow: 25px 25px 70px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+
+        /* NỘI DUNG */
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(40px, 6vw, 70px); /* Chữ lớn và sang trọng */
+            line-height: 1.1;
+            margin: 0 0 30px 0;
+            font-weight: 700;
+        }
+
+        .title span {
+            display: block;
+            color: var(--accent-color);
+            font-size: 0.8em;
+            margin-top: 10px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        /* NÚT BẤM NÂU ĐẬM */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            padding: 20px 50px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(67, 53, 32, 0.2);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(67, 53, 32, 0.3);
+        }
+
+        /* RESPONSIVE - TỰ ĐỘNG CĂN CHỈNH */
+        @media (max-width: 1024px) {
+            .hero {
+                gap: 40px;
+                padding: 40px 5%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column; /* Chuyển sang hàng dọc trên mobile */
+                text-align: center;
+                padding: 80px 20px;
+            }
+
+            .hero-img img {
+                max-width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .title {
+                font-size: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 38px;
+            }
+            .btn {
+                width: 80%; /* Nút bấm to hơn trên điện thoại */
+                padding: 18px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+
+    <!-- KHỐI HÌNH ẢNH -->
+    <div class="hero-img">
+        <img src="background1.jpg" alt="Love Nails & Spa">
+    </div>
+
+    <!-- KHỐI TIÊU ĐỀ & NÚT -->
+    <div class="hero-content">
+        <h1 class="title">
+            Love Nails & Spa
+            <span>PREMIUM EXPERIENCE</span>
+        </h1>
+
+        <a href="#" class="btn">BOOK APPOINTMENT</a>
+    </div>
+
+</section>
+
+</body>
+</html>
