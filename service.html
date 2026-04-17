@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nail Services</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #f5eee6, #e8dccf);
+}
+
+/* SECTION */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 36px;
+    color: #6b4f3b;
+    font-family: 'Georgia', serif;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ICON */
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* TITLE */
+.card h2 {
+    font-size: 20px;
+    color: #6b4f3b;
+    margin-bottom: 10px;
+}
+
+/* DESC */
+.card p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    background: #b08a5b;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8c6b45;
+}
+</style>
+
+</head>
+<body>
+
+<section class="services">
+
+    <h1>Our Services</h1>
+
+    <div class="service-grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="icon">💅</div>
+            <h2>Nail Extensions</h2>
+            <p>Acrylic, Ombre, Builder Gel and more stylish nail designs.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="icon">🖐️</div>
+            <h2>Manicure</h2>
+            <p>Professional hand care with gel polish and nail treatments.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="icon">🦶</div>
+            <h2>Pedicure</h2>
+            <p>Relaxing foot care with polish, spa, and extensions.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="icon">✨</div>
+            <h2>Add-ons</h2>
+            <p>Nail art, diamonds, long nails and extra custom designs.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
