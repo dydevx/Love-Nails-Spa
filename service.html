@@ -33,6 +33,27 @@
         .popup-box p { color: #777; font-size: 14px; }
         .popup-box a { display: inline-block; margin-top: 15px; background: #6b4f3b; color: white; padding: 10px 25px; border-radius: 20px; text-decoration: none; font-weight: bold; }
         .close { margin-top: 15px; display: block; color: #999; cursor: pointer; text-decoration: underline; font-size: 13px; }
+        /* Responsive cho Mobile */
+@media (max-width: 768px) {
+    .services {
+        padding: 40px 15px; /* Giảm bớt padding cho đỡ tốn diện tích */
+    }
+
+    .services h1 {
+        font-size: 35px; /* Chữ nhỏ lại một chút cho vừa màn hình điện thoại */
+    }
+
+    .service-grid {
+        /* Chuyển từ 4 cột thành 1 cột để cuộn từ trên xuống */
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .card {
+        padding: 25px; /* Card gọn gàng hơn trên mobile */
+    }
+}
     </style>
 </head>
 <body>
