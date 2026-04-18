@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Nails & Spa - Grand Opening</title>
+    <style>
+        :root {
+            --gold: #bda37e;
+            --bg: #f3ece4;
+            --dark: #4a3b2e;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', serif;
+            background-color: var(--bg);
+            color: var(--dark);
+            text-align: center;
+        }
+
+        /* HEADER */
+        .header { padding: 60px 20px 20px; }
+        .brand { 
+            color: var(--gold); 
+            letter-spacing: 4px; 
+            font-size: 26px; 
+            font-weight: bold; 
+            margin-bottom: 10px;
+        }
+        .grand-opening { 
+            font-size: clamp(60px, 10vw, 90px); 
+            text-transform: uppercase; 
+            margin: 0; 
+            line-height: 0.85;
+            font-weight: bold;
+        }
+        .intro { 
+            max-width: 550px; 
+            margin: 25px auto; 
+            font-style: italic; 
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        /* PROMO SECTION */
+        .promo-value { 
+            font-size: clamp(80px, 15vw, 130px); 
+            font-weight: bold; 
+            color: var(--gold); 
+            line-height: 1;
+            margin: 10px 0;
+        }
+        .promo-value span { font-size: 0.4em; }
+
+        .black-banner {
+            background: #332a21;
+            color: white;
+            display: inline-block;
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        /* BỐ CỤC HÌNH ẢNH MỚI GIỐNG POSTER */
+        .image-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr; /* 3 cột, cột giữa to hơn */
+            gap: 15px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .side-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .side-column img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .center-column {
+            position: relative; /* Để chứa hashtag đè lên */
+        }
+
+        .center-column img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 10px solid white; /* Viền trắng như hình */
+            box-sizing: border-box;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        .hashtag-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #4a3b2e;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-size: clamp(14px, 2vw, 20px);
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 10px; /* Tạo khoảng cách với viền trắng */
+        }
+
+        /* FOOTER */
+        .footer { margin: 50px 0; padding-top: 30px; }
+        .info { font-size: 18px; margin: 10px 0; font-weight: bold; }
+
+        /* Responsive Mobile */
+        @media (max-width: 768px) {
+            .image-layout {
+                grid-template-columns: 1fr; /* Chuyển thành 1 cột trên điện thoại */
+            }
+            .center-column { order: -1; height: 400px; }
+            .side-column { flex-direction: row; }
+            .side-column img { height: 150px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="brand">LOVE NAILS & SPA</div>
+        <h1 class="grand-opening">GRAND<br>OPENING</h1>
+        <p class="intro">We are excited to announce the grand opening of our new salon. Discover your true beauty with our expert care and premium products!</p>
+        
+        <div class="promo-value">30<span>% OFF</span></div>
+
+        <div class="black-banner">
+            FOR EVERY SERVICE & VALID FROM <b>23/4 TO 16/5</b>
+        </div>
+    </div>
+
+    <!-- BỐ CỤC HÌNH ẢNH MỚI THAY THẾ CHO image-strip -->
+    <div class="image-layout">
+        <!-- Cột trái -->
+        <div class="side-column">
+            <img src="https://i.pinimg.com/1200x/a6/35/1d/a6351d3275f8941c41ad03ae6e8ff8c2.jpg" alt="Nail 1">
+            <img src="https://i.pinimg.com/736x/d6/e0/83/d6e083fd768370d32a1b8ff89cea3e9c.jpg" alt="Pedicure">
+        </div>
+
+        <!-- Cột giữa - Ảnh lớn có Hashtag -->
+        <div class="center-column">
+            <img src="https://i.pinimg.com/1200x/10/74/c4/1074c47a10e121f1aeefb2a6bbf06107.jpg" alt="Main Nails">
+            <div class="hashtag-overlay">
+                #enjoyyourprettynails
+            </div>
+        </div>
+
+        <!-- Cột phải -->
+        <div class="side-column">
+            <img src="https://i.pinimg.com/1200x/23/8f/7c/238f7cd83c1594fe9a1ece5eb75250c8.jpg" alt="Nail 2">
+            <img src="https://i.pinimg.com/736x/1b/66/78/1b66782a2f8e7c40a9f3148359bc35bf.jpg" alt="Nail 3">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="info">📞 07447 769531</div>
+        <div class="info">📍 86 Whifflet Street, ML5 4EJ Coatbridge</div>
+    </div>
+
+</body>
+</html>
